@@ -1,7 +1,7 @@
 export default function Movie() {
     return (
         <div>
-            Sono la pagina di un film preciso
+            Sono la pagina dei film
         </div>
     )
 }

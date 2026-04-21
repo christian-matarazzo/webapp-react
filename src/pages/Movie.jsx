@@ -1,7 +1,10 @@
 export default function Movie() {
     return (
-        <div>
-            Sono la pagina di un film preciso
-        </div>
+        <main>
+            <div>
+                Sono la pagina di un film preciso
+            </div>
+        </main>
+
     )
 }

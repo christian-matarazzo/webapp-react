@@ -17,3 +17,17 @@ IL NOSTRO defaultLayout E LO IMPORTIAMO NEL NOSTRO App.jsx, IN MODO DA AVVOLGERE
 7. ORA DOBBIAMO UNIRE IL NOSTRA BACKEND CON IL FRONTEND, PER FARE CIO' DOBBIAMO INSTALLARE E CONFIGURARE IL MIDDLEWARE CORS NEL NOSTRO PROGETTO BACKEND, IN MODO DA NON AVERE PROBLEMI DI CORS (OVVERO CHIAMATE DALLA STESSA MACCHINA MA DA DIVERSE PORTE). ✅
 8. ORA CHE IL NOSTRO BACKEND HA AL SUO INTERNO CORS, CREIAMO UN .env NEL QUALE ANDIAMO A DEFINIRE DELLE VARIABILI D'AMBIENTE, TRA CUI LA PORTA DEL NOSTRO BACKEND✅
 9. EFFETTUIAMO UNA CHIAMATA AXIOS NELLA NOSTRA PAGINA Movies.jsx, PER OTTENRE LA LISTA DEI FILM DAL NOSTRO BACKEND, PASSIAMO AL COMPONENTE MoviesComponent.jsx LE PROPS NECESSARIE PER ESEGUIRE UN METODO MAP SULLA LISTA DEI FILM, E RENDERIZZIAMOLI A SCHERMO IN UNA CARD. INOLTRE CREIAMO IL GIUSTO COLLEGAMENTO ALLE IMMAGINI DEI FILM, UTILIZZANDO LA VARIABILE D'AMBIENTE CREATA PRECEDENTEMENTE, TRAMITE TEMPLATE LITERAL. ✅
+10. RENDIAMO NAVIGABILE TRAMITE LINK LA NAVBAR, IN MODO CHE CLICKANDO SI PASSI DALLA HOME ALLA PAGINA DEI FILM, E DA LI' ALLA SINGOLA PAGINA DI OGNI FILM, PASSANDO L'ID DEL FILM TRAMITE LA ROUTE DINAMICA✅
+
+# 10.1 UNA VOLTA RESO NAVIGABILE LA NAVBAR, ANDIAMO AD INSERIRE UN TASTO "Dettagli" SOTTO LA CARD DEI FILM, ALLA PRESSIONE, VERRA' EFFETTUATO IL REDIRECT ALLA PAGINA DEL SINGOLO FILM
+
+11. ORA CHE ABBIAMO IL BOTTONE PER SPOSTARCI SUL SINGOLO FILM, ANDIAMO AD EFFETTUARE UNA CHIAMATA AXIOS ALL'INTERNO DELLA PAGINA DEL SINGOLO FILM, PER OTTENERE I DETTAGLI DI QUEL FILM. UTILIZERO useParams PER OTTERENE L'ID DEL FILM E LO PASSERO' ALLA CHIAMATA AXIOS✅
+
+12. UNA VOLTA OTTENUTO A SCHERMO IL SINGOLO FILM, PROVIAMO A COMPONENTIZZARE✅
+
+13. INFINE COMPLETIAMO LA HOMEPAGE, CON QUALCHE INFORMAZIONE ED UN BOTTONE CHE RIPORTI ALLA SEZIONE FILM ✅
+
+# Tiriamo le somme fin ora: 
+La parte più difficile è stata creare la struttura per la pagina singola, avendo dovuto modificare la query per ottenere i dettagli del film e delle recensioni su un unico endpoint. La "creazione" del percorso delle immagini è stata un po' complessa non avendola affrontata in questo modo prima d'ora, ma con test, debug e ricerca online sono riuscito a venirne a capo anche se con difficoltà. Nel complesso, il progetto è stato interessante, ha testato molte competenze e di sicuro è stato un ottimo modo per esercitarmi con React, React Router, Axios e la gestione delle chiamate API in generale. Andare per "step" è stato efficace per non perdere la bussola, ed identificare i singoli problemi da risolvere. Il progetto ha potenziale di ampliamento, e sicuramente saranno aggiunte ulteriori funzioni su richiesta dei docenti. La parte di styling è stata portata avanti con l'ausilio di Bootstrap e utilizzo di IA per velocizzare il processo di scrittura senza usare "pacchetti" preconfezionati direttamente dal sito Bootstrap. 
+
+

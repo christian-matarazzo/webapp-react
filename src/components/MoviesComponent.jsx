@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function MoviesComponent({ movies, backendUrl, backendUrlMovies }) {
     return (
         <>
@@ -18,6 +20,9 @@ export default function MoviesComponent({ movies, backendUrl, backendUrlMovies }
                         <p className="card-text">
                             {movie?.abstract}
                         </p>
+                        <Link to={`/movies/${movie.id}`} className="btn btn-primary mt-auto">
+                            Dettagli
+                        </Link>
                     </div>
                 </div>
             </div>

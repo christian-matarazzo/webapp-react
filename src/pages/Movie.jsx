@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import SingleMovie from "../components/SingleMovie";
+import SingleReview from "../components/SingleReview";
 
 const backendUrl = import.meta.env.VITE_APP_BACKEND_URL;
 const backendMoviesUrl = import.meta.env.VITE_APP_BACKEND_URL_MOVIES;
@@ -22,6 +23,10 @@ export default function Movie() {
     }
 
     return (
+<>
 <SingleMovie movie={movie} backendUrl={backendUrl} />
+<hr className="my-5" />
+<SingleReview movie={movie} backenUrl={backendUrl}/>
+</>
     );
 }

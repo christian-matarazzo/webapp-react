@@ -44,7 +44,21 @@ TORNARE NEL BACKEND, NELLE ROTTE, E CREARE UNA NUOVA ROTTA CHE FACCIA IL CREATE.
 FLUSSO DI ESECUZIONE:
 VORREI CREARE UN COMPONENT FORM, CHE TRAMITE 2 WAY DATA BINDING CI PERMETTA DI CATTURARE DAL FORM I DATI, E ALLA PRESSIONE DEL SUBMIT INSERIRLI NEL DB.
 INIZIERO' CREANDO IL COMPONENT reviewForm.jsx✅
+
 # 16.1
+
 Questo componente dovrà gestire i dati scritti dall'utente, quindi creero' un form con:
 Nome, Voto, Recensione
-Userò una variabile di stato per immagazzinarli
+Userò una variabile di stato per immagazzinarli ✅
+
+# 16.2
+
+Dopo aver creato il form effettuo il collegamento tramite l'evento dal form alla variabile di stato ✅
+
+# 16.3 
+
+alla pressione dell'invio, una funzione scritta nel componente padre mi permetterà di renderizzare a schermo senza dover refreshare la pagina il commento inserito. ✅
+
+# 16.4 
+
+Aggiungo controlli di sicurezza sull'invio, per evitare campi vuoti ✅

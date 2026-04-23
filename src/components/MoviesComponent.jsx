@@ -40,7 +40,7 @@ export default function MoviesComponent({ movies, backendUrl, backendUrlMovies }
                                     <h5 className="card-title">{movie?.title}</h5>
                                     <h6 className="card-subtitle mb-2 text-muted">{movie?.genre}</h6>
                                     <p className="card-text">{movie?.abstract}</p>
-                                    <Link to={`/movies/${movie.id}`} className="btn btn-primary mt-auto">
+                                    <Link to={`/movies/${movie.id}`} className="button btn btn-primary mt-auto">
                                         Dettagli
                                     </Link>
                                 </div>

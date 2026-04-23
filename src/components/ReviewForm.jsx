@@ -55,7 +55,7 @@ const handleSubmit = (e) => {
                 <label  className="form-label mt-5">Recensione</label>
                 <textarea required name="text" value={formData.text} onChange={handleInputChange} type="text" className="form-control" id="text" placeholder="Scrivi la tua recensione..." />
                 <label  className="form-label mt-5">Voto: </label>
-                <select name="vote" className="Vote-Select mx-3"  id="vote" onChange={handleInputChange} value={formData.vote}>
+                <select name="vote" className="mx-3"  id="vote" onChange={handleInputChange} value={formData.vote}>
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -64,7 +64,7 @@ const handleSubmit = (e) => {
                     <option value="5">5</option>
                 </select>
                 <br />
-                <button name="invio" id="invio"class="btn btn-primary mt-5" role="button">Invia</button>
+                <button name="invio" id="invio"class="btn button btn-primary mt-5" role="button">Invia</button>
                 
             </form>
         </div>

@@ -1,5 +1,10 @@
 @import url('bootstrap');
 
+body {
+    background: rgba(167, 163, 163, 0.267)
+}
+
+
 .movie-img-wrapper {
     position: relative;
     overflow: hidden;
@@ -112,4 +117,11 @@
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* buttons */
+
+.button {
+    color: #e82f40;
+    background: #030303e0;
 }

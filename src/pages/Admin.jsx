@@ -9,30 +9,30 @@ export default function Admin() {
     useEffect(() => {
         fetch(backendMoviesUrl)
             .then(response => response.json())
-            .then(data => setMovies(data) )
-            
-            
+            .then(data => setMovies(data))
+
+
     }, [])
 
 
-   function delFilm(id){
+    function delFilm(id) {
 
-        if(confirm("Sei sicuro di voler cancellare?")){
-            fetch(`${backendMoviesUrl}/${id}`, 
-            {
-                method:"DELETE"
-            }
+        if (confirm("Sei sicuro di voler cancellare?")) {
+            fetch(`${backendMoviesUrl}/${id}`,
+                {
+                    method: "DELETE"
+                }
             )
-        .then(res=> {
-            if(res.ok){
-                setMovies(movies.filter(movie=> movie.id !== id))
-            }
-        })
-        .catch(err=>console.log("Errore: ", err))
+                .then(res => {
+                    if (res.ok) {
+                        setMovies(movies.filter(movie => movie.id !== id))
+                    }
+                })
+                .catch(err => console.log("Errore: ", err))
 
         }
 
-    } 
+    }
 
 
     return (
@@ -45,18 +45,25 @@ export default function Admin() {
                                 <th scope="col">Film</th>
                                 <th scope="col">Descrizione</th>
                                 <th scope="col">Genere</th>
-                                <th className="">Comandi</th>
+                                <th scope="col">Comandi</th>
                             </tr>
                         </thead>
-                        <tbody>{movies.map(movie=> (
-
+                        <tbody>{movies.map(movie => (
                             <tr className="movie-table" key={movie.id}>
                                 <td scope="row">{movie.title}</td>
                                 <td>{movie.abstract}</td>
                                 <td>{movie.genre}</td>
-                                <td><button>Modifica</button></td>
-                                <td><button className="btn btn-danger" onClick= {()=> {delFilm(movie.id)}}>Elimina</button></td>
-                            </tr> 
+                                <td>
+                                    <div className="d-flex gap-2">
+                                        <button className="btn btn-warning">Modifica</button>
+                                        <button
+                                            className="btn btn-danger"
+                                            onClick={() => { delFilm(movie.id) }}>
+                                            Elimina
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
                         ))}
                         </tbody>
                     </table>

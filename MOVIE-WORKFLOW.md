@@ -62,3 +62,10 @@ alla pressione dell'invio, una funzione scritta nel componente padre mi permette
 # 16.4 
 
 Aggiungo controlli di sicurezza sull'invio, per evitare campi vuoti ✅
+
+17. Pensavo di inserire una pagina Admin, che permetta aggiungere film, eliminare film rimuovere commenti:
+Per farlo, pensavo di creare una nuova pages chiamata Admin, ma stavo pensando ad un sistema di login per gestire la cosa. Siccome non sono capace al momento di crearne uno per il momento la pagina sarà fruibile da tutti. Nella pagina vorrei inserire una ul, con dentro la stampa di tutti i film al momento presenti, nella ul due bottoni che servono a modificare il film o a cancellarlo.
+Sotto questa lista, un bottone aggiungi, che permette di inserire i film.
+Inizierò con la creazione della pagina e il suo layout frontend✅
+Rendo la Route funzionante✅
+Effettuo una chiamata fetch per recuperare i film, e uso il map nella tabella ✅

@@ -20,8 +20,7 @@ export default function Home() {
                 <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
                     <Link
                         to="/movies"
-                        className="button btn btn-primary btn-lg px-5 py-3 fw-bold shadow-sm"
-                    >
+                        className="button btn btn-primary btn-lg px-5 py-3 fw-bold shadow-sm">
                         Esplora i Film
                     </Link>
                 </div>

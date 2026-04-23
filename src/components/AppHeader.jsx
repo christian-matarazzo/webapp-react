@@ -13,6 +13,7 @@ export default function AppHeader() {
                         <div className="navbar-nav ms-auto ">
                             <NavLink className="nav-link active text-white" aria-current="page" to="/">Home</NavLink>
                             <NavLink className="nav-link text-white" to="/movies">Movies</NavLink>
+                            <NavLink className="nav-link text-white" to="/admin">Admin Panel</NavLink>
                         </div>
                     </div>
                 </div>

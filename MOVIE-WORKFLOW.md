@@ -31,3 +31,20 @@ IL NOSTRO defaultLayout E LO IMPORTIAMO NEL NOSTRO App.jsx, IN MODO DA AVVOLGERE
 La parte più difficile è stata creare la struttura per la pagina singola, avendo dovuto modificare la query per ottenere i dettagli del film e delle recensioni su un unico endpoint. La "creazione" del percorso delle immagini è stata un po' complessa non avendola affrontata in questo modo prima d'ora, ma con test, debug e ricerca online sono riuscito a venirne a capo anche se con difficoltà. Nel complesso, il progetto è stato interessante, ha testato molte competenze e di sicuro è stato un ottimo modo per esercitarmi con React, React Router, Axios e la gestione delle chiamate API in generale. Andare per "step" è stato efficace per non perdere la bussola, ed identificare i singoli problemi da risolvere. Il progetto ha potenziale di ampliamento, e sicuramente saranno aggiunte ulteriori funzioni su richiesta dei docenti. La parte di styling è stata portata avanti con l'ausilio di Bootstrap e utilizzo di IA per velocizzare il processo di scrittura senza usare "pacchetti" preconfezionati direttamente dal sito Bootstrap. 
 
 
+
+## AGGIORNAMENTI ED IMPLEMENTAZIONI
+14. HO INSERITO UNA MODALE UTILIZZANDO LA LOGICA DELLO useState ED AIUTANDOMI PER IL LAYOUT TRAMITE IA, ALLA PRESSIONE DELL'IMMAGINE LA MODALE COMPARE BLURANDO LO SCHERMO E METTENDO IN EVIDENZA IL FILM CLICCATO
+
+
+15. E' STATO RICHIESTO DI PREDISPORRE UN'API PER SALVARE NEL DATABASE UNA NUOVA RECENSIONE DI UN FILM DA PARTE DELL'UTENTE, PER POI TESTARLA CON POSTMAN:
+FLUSSO DI ESECUZIONE:
+TORNARE NEL BACKEND, NELLE ROTTE, E CREARE UNA NUOVA ROTTA CHE FACCIA IL CREATE. NEL CONTROLLER EFFETTUARE LA QUERY PER IL CREATE, ED INFINE TESTARLA SU POSTMAN.✅
+
+16. DOPO AVER TESTATO LA CHIAMA CON POSTMAN, ED AVER EFFETTIVAMENTE VISTO LA RECENSIONE NEL DB, PASSIAMO AL RENDERING IN FRONTEND.
+FLUSSO DI ESECUZIONE:
+VORREI CREARE UN COMPONENT FORM, CHE TRAMITE 2 WAY DATA BINDING CI PERMETTA DI CATTURARE DAL FORM I DATI, E ALLA PRESSIONE DEL SUBMIT INSERIRLI NEL DB.
+INIZIERO' CREANDO IL COMPONENT reviewForm.jsx✅
+# 16.1
+Questo componente dovrà gestire i dati scritti dall'utente, quindi creero' un form con:
+Nome, Voto, Recensione
+Userò una variabile di stato per immagazzinarli

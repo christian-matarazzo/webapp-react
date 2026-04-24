@@ -4,10 +4,12 @@ import Movies from './pages/Movies'
 import Movie from './pages/Movie'
 import Admin from './pages/Admin'
 import DefaultLayout from './layouts/defaultLayout'
+import { GlobalProvider } from './contexts/GlobalContext'
 function App() {
 
 
   return (
+    <GlobalProvider>
     <BrowserRouter>
       <Routes>
         <Route element={<DefaultLayout />}>
@@ -19,6 +21,7 @@ function App() {
         </Route>
       </Routes>
     </BrowserRouter>
+    </GlobalProvider>
   )
 }
 

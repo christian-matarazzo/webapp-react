@@ -1,5 +1,4 @@
 import { Outlet } from "react-router-dom";
-// Rimosso import App from "../App" <--- ERA QUESTO IL PROBLEMA
 import AppFooter from "../components/AppFooter";
 import AppHeader from "../components/AppHeader";
 
